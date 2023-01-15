@@ -5,7 +5,7 @@ from .forms import CustomUserChangeForm, CustomUserCreationForm
 from .models import CustomUser
 
 
-@admin.register(CustomUser)
+# @admin.register(CustomUser)
 class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
@@ -14,4 +14,7 @@ class CustomUserAdmin(UserAdmin):
         'email', 'username', 'name', 'is_staff',
     ]
     fieldsets = UserAdmin.fieldsets + ((None, {'fields': ('name',)}),)
-    add_fieldsets = UserAdmin.fieldsets + ((None, {'fields': ('name',)}),)
+    add_fieldsets = UserAdmin.add_fieldsets + ((None, {'fields': ('name',)}),)
+
+
+admin.site.register(CustomUser, CustomUserAdmin)
