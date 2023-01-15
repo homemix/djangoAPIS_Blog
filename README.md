@@ -7,6 +7,7 @@ A Blog API built with Django Rest Framework, Built to learn and practice the fol
 - Django Rest Framework Permissions
 - Django Rest Framework Viewsets, Routers, Serializers and Documentation
 - Django Rest Framework CRUD Operations
+- API Documentation with Swagger and ReDoc
 
 ## Installation
 
