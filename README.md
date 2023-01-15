@@ -14,6 +14,7 @@ A Blog API built with Django Rest Framework, Built to learn and practice the fol
 - Create a virtual environment
 - Install the requirements
 - Run the server
+- Check API Documentation at http://localhost:8000/api/schema/swagger-ui/ or http://localhost:8000/api/schema/redoc/
 
 
 ## Credits
